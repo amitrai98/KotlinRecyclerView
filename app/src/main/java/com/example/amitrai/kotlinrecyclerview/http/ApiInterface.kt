@@ -14,8 +14,7 @@ import retrofit2.http.*
 
 interface ApiInterface {
 
-    @FormUrlEncoded
-    @GET("/users?since={id}")
-    fun getGitUsers(@Path("id") since: Int): Call<ResponseBody>
+    @GET("/users")
+    fun getGitUsers(@Query("since") since: Int): Call<ResponseBody>
 
 }

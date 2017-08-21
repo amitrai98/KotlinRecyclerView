@@ -11,7 +11,7 @@ class Requester {
 
 
     internal fun provideRetrofit(): Retrofit {
-        val BASE_URL =  "TEST SERVER"
+        val BASE_URL =  "http://192.168.1.91"
 
         return Retrofit.Builder()
                 .baseUrl(BASE_URL)
