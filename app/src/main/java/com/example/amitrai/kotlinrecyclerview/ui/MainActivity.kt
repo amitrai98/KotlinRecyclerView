@@ -1,4 +1,4 @@
-package com.example.amitrai.kotlinrecyclerview
+package com.example.amitrai.kotlinrecyclerview.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.Toast
 import com.example.amitrai.kotlinapirequest.bean.BaseBean
 import com.example.amitrai.kotlinapirequest.http.request.SimpleRequest
 import com.example.amitrai.kotlinapirequest.listeners.ApiCallback
+import com.example.amitrai.kotlinrecyclerview.R
 import com.example.amitrai.kotlinrecyclerview.bean.UserBean
 
 class MainActivity : AppCompatActivity(), ApiCallback {
