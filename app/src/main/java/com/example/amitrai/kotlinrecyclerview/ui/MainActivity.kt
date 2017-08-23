@@ -1,12 +1,10 @@
 package com.example.amitrai.kotlinrecyclerview.ui
 
 import android.app.ProgressDialog
-import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
-import android.widget.Toast
 import com.example.amitrai.kotlinapirequest.bean.BaseBean
 import com.example.amitrai.kotlinapirequest.http.request.SimpleRequest
 import com.example.amitrai.kotlinapirequest.listeners.ApiCallback
@@ -63,16 +61,12 @@ class MainActivity : AppCompatActivity(), ApiCallback {
         if (pd.isShowing)
             pd.dismiss()
         userList = userBean
-
-
         userList = arrayOf(UserBean())
         userAdapter = UsersAdapter(userBean, this)
         recycler_view.adapter = userAdapter
         val linearLayoutManager = LinearLayoutManager(this)
         recycler_view.layoutManager = linearLayoutManager
         userAdapter.notifyDataSetChanged()
-
-        Toast.makeText(this, "response success "+ userBean.size,Toast.LENGTH_LONG).show()
     }
 
 
